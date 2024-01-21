@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6HC-s3-4Jl">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Kelas Dicoding-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UiKitDynamicTableView" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HX0-6M-3rE">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -30,6 +30,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HX0-6M-3rE" secondAttribute="bottom" id="qFK-Nb-6op"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Kelas Dicoding" id="j4l-0l-7Ay">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Bqd-RW-Mlr"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="globe" catalog="system" id="RIC-rV-4Ba">
+                            <connections>
+                                <action selector="goToWebsite:" destination="BYZ-38-t0r" id="jhk-fE-b25"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="academyTableView" destination="HX0-6M-3rE" id="KQM-0q-8Ib"/>
                         <segue destination="kE3-ML-fPH" kind="show" identifier="moveToDetail" id="als-qx-jrJ"/>
@@ -37,31 +45,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="58" y="-2"/>
+            <point key="canvasLocation" x="1910.6870229007632" y="-2.1126760563380285"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="06q-t6-Uny">
             <objects>
                 <viewController id="kE3-ML-fPH" customClass="DetailViewController" customModule="UiKitDynamicTableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1ve-rE-kPW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dJh-tt-hZQ">
-                                <rect key="frame" x="96.666666666666686" y="24" width="200" height="200"/>
+                                <rect key="frame" x="96.666666666666686" y="127" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Ecf-gb-Dal"/>
                                     <constraint firstAttribute="height" constant="200" id="SXP-VT-bDH"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Al-EK-gb3">
-                                <rect key="frame" x="12" y="236" width="369" height="21.666666666666686"/>
+                                <rect key="frame" x="12" y="339" width="369" height="21.666666666666686"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igt-fx-2a8">
-                                <rect key="frame" x="12" y="269.66666666666669" width="369" height="20.333333333333314"/>
+                                <rect key="frame" x="12" y="372.66666666666669" width="369" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -90,10 +98,96 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0S-eF-fUJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884" y="18"/>
+            <point key="canvasLocation" x="2736.6412213740455" y="17.605633802816904"/>
+        </scene>
+        <!--Lihat Kelas-->
+        <scene sceneID="W2F-bN-cqV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MC9-Mq-jsr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Lihat Kelas" image="books.vertical" catalog="system" id="ypI-oL-N9A"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FPl-uZ-mYr">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ep7-HK-kjF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Esm-go-RVA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983.96946564885491" y="-2.1126760563380285"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="Uwv-tQ-slM">
+            <objects>
+                <viewController id="7Or-cB-8IR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GZn-If-UAn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SOLID" translatesAutoresizingMaskIntoConstraints="NO" id="3D3-fU-kN1">
+                                <rect key="frame" x="96.666666666666686" y="326" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4Pt-hQ-rdq"/>
+                                    <constraint firstAttribute="width" constant="200" id="hQP-Vr-NuM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veronika Ansya" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7N-rP-zoy">
+                                <rect key="frame" x="138.33333333333334" y="542" width="116.33333333333334" height="19.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer at Grab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8L-GV-EtT">
+                                <rect key="frame" x="111.66666666666667" y="567.33333333333337" width="169.66666666666663" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Snf-C7-41o"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A7N-rP-zoy" firstAttribute="centerX" secondItem="GZn-If-UAn" secondAttribute="centerX" id="3u4-Om-hno"/>
+                            <constraint firstItem="A7N-rP-zoy" firstAttribute="top" secondItem="3D3-fU-kN1" secondAttribute="bottom" constant="16" id="4Zq-CW-lhe"/>
+                            <constraint firstItem="3D3-fU-kN1" firstAttribute="centerX" secondItem="GZn-If-UAn" secondAttribute="centerX" id="AxI-gY-iHq"/>
+                            <constraint firstItem="3D3-fU-kN1" firstAttribute="centerY" secondItem="GZn-If-UAn" secondAttribute="centerY" id="QTR-3D-kzM"/>
+                            <constraint firstItem="D8L-GV-EtT" firstAttribute="top" secondItem="A7N-rP-zoy" secondAttribute="bottom" constant="6" id="Vyr-9K-aCS"/>
+                            <constraint firstItem="D8L-GV-EtT" firstAttribute="centerX" secondItem="GZn-If-UAn" secondAttribute="centerX" id="fSV-SV-oCr"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="4qP-Jy-zDX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HXT-kF-JRe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971" y="724"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8TU-dd-TPi">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6HC-s3-4Jl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1eO-ys-bmg">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MC9-Mq-jsr" kind="relationship" relationship="viewControllers" id="xZd-wd-A3W"/>
+                        <segue destination="7Or-cB-8IR" kind="relationship" relationship="viewControllers" id="bj5-cS-wkz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0xV-kA-mWo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="SOLID" width="333.33334350585938" height="333.33334350585938"/>
+        <image name="books.vertical" catalog="system" width="128" height="107"/>
+        <image name="globe" catalog="system" width="128" height="123"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
