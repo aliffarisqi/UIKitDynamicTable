@@ -16,6 +16,7 @@
 		1141AC712B5CA6AB00EE4D75 /* AcademyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141AC702B5CA6AB00EE4D75 /* AcademyModel.swift */; };
 		1141AC782B5CA9D200EE4D75 /* academyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141AC762B5CA9D200EE4D75 /* academyTableViewCell.swift */; };
 		1141AC792B5CA9D200EE4D75 /* academyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1141AC772B5CA9D200EE4D75 /* academyTableViewCell.xib */; };
+		1141AC9B2B5CBEDF00EE4D75 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141AC9A2B5CBEDF00EE4D75 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1141AC702B5CA6AB00EE4D75 /* AcademyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademyModel.swift; sourceTree = "<group>"; };
 		1141AC762B5CA9D200EE4D75 /* academyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = academyTableViewCell.swift; sourceTree = "<group>"; };
 		1141AC772B5CA9D200EE4D75 /* academyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = academyTableViewCell.xib; sourceTree = "<group>"; };
+		1141AC9A2B5CBEDF00EE4D75 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				1141AC702B5CA6AB00EE4D75 /* AcademyModel.swift */,
 				1141AC762B5CA9D200EE4D75 /* academyTableViewCell.swift */,
 				1141AC772B5CA9D200EE4D75 /* academyTableViewCell.xib */,
+				1141AC9A2B5CBEDF00EE4D75 /* DetailViewController.swift */,
 			);
 			path = UiKitDynamicTableView;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				1141AC782B5CA9D200EE4D75 /* academyTableViewCell.swift in Sources */,
 				1141AC612B5C9BD700EE4D75 /* ViewController.swift in Sources */,
 				1141AC5D2B5C9BD700EE4D75 /* AppDelegate.swift in Sources */,
+				1141AC9B2B5CBEDF00EE4D75 /* DetailViewController.swift in Sources */,
 				1141AC712B5CA6AB00EE4D75 /* AcademyModel.swift in Sources */,
 				1141AC5F2B5C9BD700EE4D75 /* SceneDelegate.swift in Sources */,
 			);
